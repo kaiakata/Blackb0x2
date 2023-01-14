@@ -1,0 +1,48 @@
+//meotxe qvizis programa
+// umciresi saerto jeradi // evklides meore algoritmi (gaumjobesebuli)
+#include <bits/stdc++.h>
+
+using namespace std;
+//meotxe qvizis progrma
+// umciresi saerto jeradi
+int main()
+{
+    int a,b,usg,usj;
+    cin>>a>>b;
+    int c=a*b;
+    while (a!=0 && b!=0 ){
+    if(a>b)
+        a=a%b;
+        else
+            b=b%a;
+}
+usg=a+b;
+usj=c/usg;
+cout << usj;
+
+    return 0;
+}
+
+
+
+// udidesi saerto gamyyofi 
+//evklides algoritmis pirveli varianti
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,usg,usj;
+    cin>>a>>b;
+    while (a!=b){
+    if(a>b)
+        a=a-b;
+        else
+            b=b-a;
+}
+usg=a;
+cout<< usg;
+    return 0;
+}
